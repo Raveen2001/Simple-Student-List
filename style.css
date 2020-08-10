@@ -1,0 +1,84 @@
+html {
+  background-image: url("background.jpg");
+}
+.top {
+  position: absolute;
+  width: 30%;
+  left: 33.5%;
+  height: 47%;
+  background: white;
+  border-radius: 40px;
+}
+.form-inputs {
+  border: 2px solid #a88685;
+  border-radius: 20px;
+  position: relative;
+  top: 45px;
+  left: 11.5%;
+  background-color: white;
+}
+.form-inputs legend {
+  text-align: center;
+}
+.form-inputs input {
+  width: 100%;
+  margin: 10px 0px 10px -5px;
+}
+.btn {
+  position: relative;
+  top: 5px;
+  left: 60px;
+  border: none;
+  font-size: 1em;
+  height: 2em;
+  width: 6em;
+  border-radius: 5px;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.bottom {
+  position: absolute;
+  top: 53%;
+  left: 23.5%;
+  width: 50%;
+  /* height: 400px; */
+  background: white;
+  text-align: center;
+  border-radius: 40px;
+  display: none;
+}
+table {
+  position: relative;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  left: 10%;
+  margin-bottom: 40px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th {
+  min-width: 5em;
+}
+.table-btn {
+  position: relative;
+  left: 20px;
+  border: none;
+  font-size: 1em;
+  height: 2em;
+  width: 6em;
+  border-radius: 5px;
+}

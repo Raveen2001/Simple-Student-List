@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" href="app.js"></script>
+    <title>Students List</title>
+  </head>
+  <body>
+    <div class="top">
+      <form id="list" onsubmit="handleForm(event)">
+        <fieldset style="width: 70%; height: 240px;" class="form-inputs">
+          <legend>Enter the details</legend>
+          <label class="form-label" for="name"
+            >Name: <span style="color: red;">*</span><br
+          /></label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name...."
+            required
+          /><br />
+          <label class="form-label" for="rollno"
+            >Roll No:<span style="color: red;">*</span><br
+          /></label>
+          <input
+            type="text"
+            id="rollno"
+            placeholder="Enter your Roll-No.....(eg:19CSR154)"
+            required
+          /><br />
+          <label class="form-label" for="email">Email:<br /></label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your e-mail....(optional)"
+          /><br />
+          <button type="reset" class="btn">reset</button>
+          <button type="submit" class="btn">
+            Add
+          </button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="bottom" id="table-details">
+      <h1>List:</h1>
+      <table id="table-list">
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Email</th>
+          <th>
+            <button class="table-btn" onclick="removeAll()">Remove All</button>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
